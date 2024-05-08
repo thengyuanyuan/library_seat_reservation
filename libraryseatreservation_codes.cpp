@@ -4,7 +4,8 @@
 #include <string>
 #include <ctime>
 #include <cmath>
-#include <windows.h>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -80,7 +81,7 @@ SEAT:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -99,7 +100,7 @@ SEAT:
         system("cls");
         cout<<"You have quit from the reservation"<<endl;
         cout<<"Thank You"<<endl;
-        Sleep(5000);
+        this_thread::sleep_for(chrono::milliseconds(5000));
         system("cls");
         goto MENU;
     }
@@ -120,7 +121,7 @@ CHOOSE_DATE:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -201,7 +202,7 @@ CHOOSE_TIME:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -237,7 +238,7 @@ cin>>endTime;
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -327,13 +328,13 @@ CALCULATE_PRICE:
         system("cls");
         cout<<"You have quit from the reservation"<<endl;
         cout<<"Thank You"<<endl;
-        Sleep(5000);
+        this_thread::sleep_for(chrono::milliseconds(5000));
         system("cls");
         goto MENU;
     }
     else if(choose2==1&&choose1==3)
     {
-        system("cls");
+        this_thread::sleep_for(chrono::milliseconds(5000));
         goto PAYMENT;
     }
     else if (choose2==1&&choose1==2)
@@ -373,7 +374,7 @@ PERSONAL_INFORMATION:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -385,7 +386,7 @@ PERSONAL_INFORMATION:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -399,7 +400,7 @@ ask_student:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -413,7 +414,7 @@ ask_student:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -425,7 +426,7 @@ ask_student:
             system("cls");
             cout<<"You have quit from the reservation"<<endl;
             cout<<"Thank You"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
@@ -475,7 +476,7 @@ PERSONAL_INFORMATION_OUTPUT:
         system("cls");
         cout<<"You have quit from the reservation"<<endl;
         cout<<"Thank You"<<endl;
-        Sleep(5000);
+        this_thread::sleep_for(chrono::milliseconds(5000));
         system("cls");
         goto PERSONAL_INFORMATION;
     }
@@ -530,7 +531,7 @@ PAYMENT:
         {
             system("cls");
             cout<<"Reservation has been canceled"<<endl;
-            Sleep(5000);
+            this_thread::sleep_for(chrono::milliseconds(5000));
             system("cls");
             goto MENU;
         }
